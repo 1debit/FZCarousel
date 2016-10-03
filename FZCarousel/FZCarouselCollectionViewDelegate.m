@@ -12,7 +12,6 @@
 #import "FZCarouselCollectionViewDelegate.h"
 
 @interface FZCarouselCollectionViewDelegate ()
-@property (nonatomic, strong) NSArray *dataArray;
 @property (nonatomic, strong) UIPanGestureRecognizer *timerInvalidatingGestureRecognizer;
 @property (nonatomic, assign) NSInteger cycleLength;
 @property (nonatomic, assign) NSInteger dataMultiplier;
