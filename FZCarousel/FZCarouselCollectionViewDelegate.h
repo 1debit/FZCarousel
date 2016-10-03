@@ -22,7 +22,7 @@ typedef void (^FZCarouselCollectionViewDelegateDidSelectCellBlock)(UICollectionV
 
 @interface FZCarouselCollectionViewDelegate : NSObject <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UIGestureRecognizerDelegate>
 {
-	@protected NSArray *_dataArray;
+	NSArray *_dataArray;
 }
 /**
  * @description The block invoked when a cell is selected.
