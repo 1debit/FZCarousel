@@ -22,7 +22,7 @@ typedef void (^FZCarouselCollectionViewDelegateDidSelectCellBlock)(UICollectionV
 
 @interface FZCarouselCollectionViewDelegate : NSObject <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UIGestureRecognizerDelegate>
 {
-	NSArray *_dataArray;
+	@protected NSArray *_dataArray;
 }
 /**
  * @description The block invoked when a cell is selected.
@@ -48,6 +48,8 @@ typedef void (^FZCarouselCollectionViewDelegateDidSelectCellBlock)(UICollectionV
  * @description Determines whether gestures received by the collecitonView cancel carousel movement. By default, YES.
  */
 @property (nonatomic, assign) BOOL gestureRecognitionShouldEndCarousel;
+
+@property (nonatomic, strong) NSArray *dataArray;
 
 #pragma mark - Constructors -
 /**
